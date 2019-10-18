@@ -3,28 +3,18 @@ import java.util.*;
 
 public class Summahaku {
 
-    long laske(int[] arr, int sum) {
-        HashMap<Long, Long> previousSum = new HashMap<>();
-        int n = arr.length;
-        long result = 0;
-        long currentSum = 0;
+    HashMap<Long, Integer> h = new HashMap<>();
 
-        for (int i = 0; i < n; i++) {
+    long laske(int[] arr, int x) {
+        
+        long sum = 0, result = 0;
 
-            currentSum += arr[i];
+        h.put(0L, 1);
 
-            if (currentSum == sum) result++;
-            
-            if (previousSum.containsKey(currentSum - sum)) 
-                result += previousSum.get(currentSum - sum);            
-
-            Long count = previousSum.get(currentSum);
-            
-            if (count == null) {
-                previousSum.put(currentSum, 1L);
-            } else {
-                previousSum.put(currentSum, count + 1);
-            }
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            result += h.getOrDefault(sum - x, 0);
+            h.put(sum, h.getOrDefault(sum, 0) + 1);
         }
         return result;
     }
