@@ -1,0 +1,138 @@
+
+-pre-init:
+
+-init-private:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-macrodef-junit-single:
+
+-init-test-properties:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+Trying to override old definition of task http://www.netbeans.org/ns/j2se-project/3:test-impl
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug:
+
+-init-macrodef-junit-debug-batch:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+   [delete] Deleting: C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\build\built-jar.properties
+
+deps-jar:
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\build\built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [javac] Compiling 1 source file to C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\build\classes
+    [javac] C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java:10: error: constructor Mover in class Mover cannot be applied to given types;
+    [javac]         Mover m = new Mover("", createVisited(l), new HashMap<>());
+    [javac]                   ^
+    [javac]   required: Tile,String,HashSet<Character>[][],HashSet<Character>
+    [javac]   found: String,HashSet<Character>[][],HashMap<Object,Object>
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java:18: error: method visit in class Mover cannot be applied to given types;
+    [javac]         m.visit(start);
+    [javac]          ^
+    [javac]   required: Tile,String
+    [javac]   found: Tile
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java:29: error: cannot find symbol
+    [javac]                 return t.path;
+    [javac]                         ^
+    [javac]   symbol:   variable path
+    [javac]   location: variable t of type Tile
+    [javac] C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java:42: error: cannot find symbol
+    [javac]             for (Tile n : t.neighbours()) {
+    [javac]                            ^
+    [javac]   symbol:   method neighbours()
+    [javac]   location: variable t of type Tile
+    [javac] C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java:47: error: method visit in class Mover cannot be applied to given types;
+    [javac]                 m.visit(n);
+    [javac]                  ^
+    [javac]   required: Tile,String
+    [javac]   found: Tile
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java:78: error: cannot find symbol
+    [javac]         path = t.path;
+    [javac]                 ^
+    [javac]   symbol:   variable path
+    [javac]   location: variable t of type Tile
+    [javac] Note: C:\Users\Jouni\Documents\NetBeansProjects\mooc-tira-s19\viikko10-Viikko10Tehtava6\src\Labyrintti.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 6 errors
